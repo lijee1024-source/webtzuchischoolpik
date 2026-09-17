@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzu Chi School - Educating with Compassion & Wisdom</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased overflow-x-hidden">
+<!-- RUNNING TEXT / BANNER PENGUMUMAN -->
+<div class="bg-emerald-600 text-slate-950 font-bold py-2 px-4 text-sm z-50 relative shadow-md">
+    <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        📢 Informasi SPMB: Penerimaan Murid Baru Tzu Chi School T.A. 2026/2027 Telah Dibuka! Dapatkan Penawaran Khusus Pendaftaran Early Bird. Hubungi (021) 50556688.
+    </marquee>
+</div>
+    <!-- NAVBAR GLASSMORPHISM -->
+    <nav class="fixed top-9 left-0 right-0 z-50 ...">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo Sekolah -->
+            <div class="flex items-center gap-3">
+                <div class="p-2.5 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-emerald-400">
+                    <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="font-black text-xl tracking-wider text-white block leading-tight">TZU CHI</span>
+                    <span class="text-xs text-emerald-400 font-medium tracking-widest uppercase">School Indonesia</span>
+                </div>
+            </div>
+            
+            <!-- Menu Navigasi Utama -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-slate-300">
+                <a href="#beranda" class="hover:text-emerald-400 transition-all">Beranda</a>
+                <a href="#profil" class="hover:text-emerald-400 transition-all">Profil</a>
+                <a href="#kegiatan" class="hover:text-emerald-400 transition-all">Kegiatan</a>
+                <a href="#kontak" class="hover:text-emerald-400 transition-all">Kontak</a>
+            </div>
+
+            <!-- Button SPMB -->
+            <a href="#spmb" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-emerald-500/25 hover:scale-105 flex items-center gap-2">
+                <span>SPMB Online</span>
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION ASIMETRIS -->
+    <section id="beranda" class="relative pt-36 pb-24 overflow-hidden min-h-screen flex items-center">
+        <!-- Background Lighting Effects -->
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7" data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <i data-lucide="award" class="w-4 h-4"></i>
+                    <span>Humanistic Education & Academic Excellence</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
+                    Mendidik dengan <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Cinta Kasih</span> & Kebijaksanaan.
+                </h1>
+                <p class="text-slate-400 text-lg mb-8 leading-relaxed max-w-xl">
+                    Tzu Chi School menggabungkan kurikulum berstandar internasional dengan pendidikan karakter berbasis nilai kemanusiaan universal.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#spmb" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-8 py-4 rounded-2xl shadow-lg shadow-emerald-500/20 hover:scale-105 transition-all">
+                        Pendaftaran Siswa Baru
+                    </a>
+                    <a href="#profil" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-8 py-4 rounded-2xl transition-all">
+                        Tur Virtual
+                    </a>
+                </div>
+            </div>
+
+            <!-- FOTO UTAMA 1 (HERO) -->
+            <div class="md:col-span-5 relative" data-aos="fade-left" data-aos-duration="1000">
+                <div class="relative rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-800/50 backdrop-blur-md p-2">
+                    <!-- TEMPEL LINK FOTO UTAMA DI SINI (Atribut src) -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw2hC7QsVHC9ytGuJNSyEchzi2futTughNHK-HJfpNfJI4mVM4y3IaQ2ne&s=10" 
+                         alt="Tzu Chi School" 
+                         class="w-full h-[450px] object-cover rounded-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL SECTION -->
+    <section id="profil" class="py-24 bg-slate-900/50 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-emerald-400 text-sm font-semibold tracking-widest uppercase">Tentang Kami</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Profil Tzu Chi School</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- FOTO PROFIL (FOTO SEKOALH / FASILITAS) -->
+                <div class="rounded-3xl overflow-hidden border border-slate-700/50" data-aos="fade-right">
+                    <!-- TEMPEL LINK FOTO PROFIL DI SINI -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwiM2qu-ANUIPm7x3mLRfMIdDgATmDnPs2hleItDOzSiJYue6G7767oIc&s=10" 
+                         alt="Gedung Tzu Chi School" 
+                         class="w-full h-80 object-cover">
+                </div>
+
+                <div class="space-y-6" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-white">Membentuk Generasi Berkarakter & Berdaya Saing Global</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Tzu Chi School berkomitmen untuk menciptakan lingkungan belajar holistik. Kami membina siswa tidak hanya unggul secara akademis, tetapi juga memiliki budi pekerti luhur, rasa empati, serta kepedulian terhadap lingkungan dan sesama.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 bg-slate-800/40 border border-slate-700/50 rounded-xl">
+                            <h4 class="text-xl font-bold text-emerald-400">Trilingual</h4>
+                            <p class="text-slate-400 text-sm">Indonesia, Inggris, Mandarin</p>
+                        </div>
+                        <div class="p-4 bg-slate-800/40 border border-slate-700/50 rounded-xl">
+                            <h4 class="text-xl font-bold text-emerald-400">Karakter</h4>
+                            <p class="text-slate-400 text-sm">Pendidikan Budi Pekerti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEGIATAN & GALERI SECTION -->
+    <section id="kegiatan" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-emerald-400 text-sm font-semibold tracking-widest uppercase">Aktivitas Siswa</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Kegiatan & Kehidupan Sekolah</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- CARD KEGIATAN 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <!-- TEMPEL LINK FOTO KEGIATAN 1 DI SINI -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWfI8rX5sA-czu7nm-m5MzLjqliaxC5VdeYfwA-5cszZKIZ8zR2q9sOwU&s=10" 
+                             alt="Kegiatan Belajar Interaktif" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Pembelajaran Interaktif</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Siswa diajak eksplorasi sains dan teknologi melalui eksperimen praktis.</p>
+                    </div>
+                </div>
+
+                <!-- CARD KEGIATAN 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <!-- TEMPEL LINK FOTO KEGIATAN 2 DI SINI -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQztUm3xxVo7U-tsyAgaes-r03iig5T_exfNe_8GkBV6S4Dhmjqd-ncc-s&s=10" 
+                             alt="Kelas Budi Pekerti" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Kelas Budi Pekerti</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Menanamkan nilai-nilai kemanusiaan, tata krama, dan rasa syukur sejak dini.</p>
+                    </div>
+                </div>
+
+                <!-- CARD KEGIATAN 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden">
+                        <!-- TEMPEL LINK FOTO KEGIATAN 3 DI SINI -->
+                        <img src="https://cintakasihtzuchi.sch.id/wp-content/uploads/2025/03/31032025-smasajiteh.png" 
+                             alt="Seni dan Kebudayaan" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Seni & Olahraga</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Pengembangan bakat non-akademik melalui beragam pilihan ekstrakurikuler.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SPMB (PENDAFTARAN) -->
+    <section id="spmb" class="py-24 bg-gradient-to-b from-slate-950 to-slate-900 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in">
+            <div class="p-10 rounded-3xl bg-gradient-to-r from-emerald-950/40 to-slate-900 border border-emerald-500/30 shadow-2xl relative overflow-hidden">
+                <span class="inline-block bg-emerald-500/20 text-emerald-400 text-sm font-bold px-4 py-1.5 rounded-full mb-4">
+                    SPMB TA 2026/2027
+                </span>
+                <h2 class="text-3xl font-extrabold text-white mb-4">Bergabunglah Bersama Keluarga Tzu Chi School</h2>
+                <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+                    Pendaftaran murid baru untuk jenjang TK, SD, SMP, dan SMA telah dibuka. Tempat terbatas!
+                </p>
+                <a href="#kontak" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105">
+                    <span>Formulir Pendaftaran</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <span class="text-emerald-400 text-sm font-semibold tracking-widest uppercase">Hubungi Kami</span>
+                    <h2 class="text-3xl font-bold text-white mt-2 mb-6">Informasi & Lokasi</h2>
+                    <div class="space-y-4 text-slate-300">
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-emerald-400 shrink-0 mt-1"></i>
+                            <p>Jl. Pantai Indah Kapuk, Kamal Muara, Penjaringan, Jakarta Utara</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i data-lucide="phone" class="w-6 h-6 text-emerald-400 shrink-0"></i>
+                            <p>(021) 50556688</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i data-lucide="mail" class="w-6 h-6 text-emerald-400 shrink-0"></i>
+                            <p>info@tzuchi.sch.id</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Pesan Ringkas -->
+                <div class="bg-slate-800/50 border border-slate-700/50 p-8 rounded-2xl" data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-white mb-4">Kirim Pesan</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Nama Lengkap" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                        <input type="notelepon" placeholder="Nomor Telepon Anda" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500">
+                        <textarea placeholder="Pesan Anda" rows="3" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500"></textarea>
+                        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 rounded-xl transition-all">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-8 border-t border-slate-800/60 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Tzu Chi School Indonesia. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS JS & Lucide Icons Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+        lucide.createIcons();
+    </script>
+</body>
+</html>
