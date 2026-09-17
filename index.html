@@ -246,5 +246,43 @@
         AOS.init({ once: true, duration: 800 });
         lucide.createIcons();
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // 1. Ganti '08xxxxxxxxxx' dengan nomor WhatsApp penerima (gunakan format internasional tanpa tanda '+')
+  // Contoh: 6281234567890
+  const nomorWA = "6288213151129";
+
+  // 2. Cari elemen form di halaman Anda (sesuaikan ID form jika ada, misal: #form-pesan)
+  const formPesan = document.querySelector("form");
+
+  if (formPesan) {
+    formPesan.addEventListener("submit", function (e) {
+      // Mencegah form melakukan reload/submit default
+      e.preventDefault();
+
+      // Merekam data dari input form yang sudah ada
+      // Sesuaikan 'name' atau 'id' input dengan kode HTML Anda jika berbeda
+      const nama = formPesan.querySelector('[name="nama"], #nama')?.value || "-";
+      const email = formPesan.querySelector('[name="email"], #email')?.value || "-";
+      const hp = formPesan.querySelector('[name="hp"], [name="telepon"], #hp')?.value || "-";
+      const pesan = formPesan.querySelector('[name="pesan"], #pesan')?.value || "-";
+
+      // Menyusun format pesan WhatsApp
+      const teksPesan = 
+        `*Pesan Baru dari Website Sekolah*\n\n` +
+        `*Nama:* ${nama}\n` +
+        `*Email:* ${email}\n` +
+        `*No. HP:* ${hp}\n` +
+        `*Pesan:* ${pesan}`;
+
+      // Mengubah teks menjadi format URL yang aman
+      const urlWA = `https://wa.me/${nomorWA}?text=${encodeURIComponent(teksPesan)}`;
+
+      // Membuka WhatsApp di tab/aplikasi baru
+      window.open(urlWA, "_blank");
+    });
+  }
+});
+</script>
 </body>
 </html>
